@@ -25,11 +25,9 @@ function maxOfThree(a,b,c){
 // ---------------------
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 // ---------------------
-var vowel = ["a","e","i","o","u"];
 
 function isVowel(char){
-    if(char == [vowel]) {return true;}
-    else {return false;}
+    return "a,e,i,o,u".indexOf(char)>= 0;
 };
 
 // ---------------------
