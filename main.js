@@ -33,9 +33,19 @@ function isVowel(char){
 // ---------------------
 // Write a function translate() that will translate a text into "rÃ¶varsprÃ¥ket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
 // ---------------------
+var translate = [];
 
 function rovarspraket(phrase){
-    //...
+    var stringSet = phrase.split('');
+
+        stringSet.forEach(function(char){
+            if("aeiou".indexOf(char) < 0) {
+                translate.push(char + "o" + char);
+            } else if ("aeiou".indexOf(char) >= 0){
+                translate.push(char);
+            }
+        })
+        return translate.join('');
 }
 
 // ---------------------
@@ -43,7 +53,7 @@ function rovarspraket(phrase){
 // ---------------------
 
 function sum(sumArray){
-    var result = sumArray.reduce(function(a,b){
+    var result = sumArray.Reduce(function(a,b){
         return a + b;
     });
 
