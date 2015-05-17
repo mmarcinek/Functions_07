@@ -53,7 +53,7 @@ function rovarspraket(phrase){
 // ---------------------
 
 function sum(sumArray){
-    var result = sumArray.Reduce(function(a,b){
+    var result = sumArray.reduce(function(a,b){
         return a + b;
     });
 
