@@ -53,16 +53,16 @@ function rovarspraket(phrase){
 // ---------------------
 // This does not work!!!!
 function sum(numbers){
-    numbers.reduce(function(a,b){
+   var answer = numbers.reduce(function(a,b){
         return a + b;
     });
 
-    return sumArray;
+    return answer;
 };
 
 
 function multiply(multArray){
-    multArray.reduce(function(a,b){
+    var result = multArray.reduce(function(a,b){
         return a * b;
     });
 
@@ -84,8 +84,11 @@ function reverse(esrever){
 // ---------------------
 
 function findLongestWord(words){
-    //...
-}
+    var longest = words.sort(function(a,b) {
+        return b.length - a .length;})[0];
+    return longest;
+    };
+
 
 // ---------------------
 // Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
