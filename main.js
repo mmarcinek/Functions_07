@@ -46,35 +46,37 @@ function rovarspraket(phrase){
             }
         })
         return translate.join('');
-}
+};
 
 // ---------------------
 // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
 // ---------------------
+// This does not work!!!!
+// function sum(sumArray){
+//     var result = sumArray.reduce(function(a,b){
+//         return a + b;
+//     });
 
-function sum(sumArray){
-    var result = sumArray.reduce(function(a,b){
-        return a + b;
-    });
+//     return result;
+// };
 
-    return result;
-};
+// function multiply(multArray){
+//     var result = multArray.reduce(function(a,b){
+//         return a * b;
+//     });
 
-function multiply(multArray){
-    var result = multArray.reduce(function(a,b){
-        return a * b;
-    });
-
-    return result;
-};
+//     return result;
+// };
 
 // ---------------------
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse(){
-    //...
-}
+function reverse(esrever){
+    var response = esrever.split('').reverse().join('');
+    return response;
+};
+
 
 // ---------------------
 // Write a function findLongestWord() that takes an array of words and returns the length of the longest one.
