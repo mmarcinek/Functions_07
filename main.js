@@ -111,5 +111,29 @@ function filterLongWords(words, i){
 // ---------------------
 
 function charFreq(string){
+    var chars = string.split(''); // splits the string that is entered
+    var charList = {}; // defines the empty object
 
+    chars.forEach(function(char){
+        if (charList[char] === undefined){
+            charList[char] = 1;
+        } else {
+            charList[char] = charList[char] + 1;
+        }
+    });
+
+
+  return charList;
 }
+
+// this is what we worked through in class, I am now responsible for the implementation of this resolution.
+
+
+
+
+
+
+
+
+
+
